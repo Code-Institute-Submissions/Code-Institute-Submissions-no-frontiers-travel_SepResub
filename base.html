@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+   {% block styles %}
+   {% endblock %} 
+   <title>No Frontiers WebPage| Travel site</title>
+</head>
+<body>
+
+
+    <header>
+        <!-- top navbar -->
+		<nav class="nav-extended #00897b teal darken-1">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">No Frontiers Travel</a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+		</nav>
+
+        <!-- mobile sidenav -->
+		<ul class="sidenav" id="mobile-demo">
+            <li><h4 class="center-align #00897b teal darken-1">Yummy Recipes</h4></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>    
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    
+</body>
+</html>
