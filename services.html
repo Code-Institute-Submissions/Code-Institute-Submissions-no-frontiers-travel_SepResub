@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+
+   <title>No Frontiers WebPage| Travel site</title>
 </head>
 <body>
-    <p>Test Text</p>
+
+    <header>
+        <!-- top navbar -->
+		<nav class="nav-extended #00897b teal darken-1">
+			<div class="nav-wrapper">
+				<a href="index.html" class="brand-logo">No Frontiers Travel</a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+		</nav>
+
+        <!-- mobile sidenav -->
+		<ul class="sidenav" id="mobile-demo">
+            <li><h4 class="center-align #00897b">No Frontiers Travel</h4></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>    
+    </header>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            One of three columns
+          </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
+          <div class="col-sm">
+            One of three columns
+          </div>
+        </div>
+      </div>
+
+   
 </body>
 </html>
