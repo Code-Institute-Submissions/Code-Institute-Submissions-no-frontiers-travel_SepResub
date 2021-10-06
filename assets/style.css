@@ -18,3 +18,7 @@
     transform: translate(-50%, -50%);
     color: blue;
   }
+
+  div#map {
+    min-height: 360px;
+  }
